@@ -17,3 +17,4 @@ on filter=lfs diff=lfs merge=lfs -text
 02_18_2024.mph filter=lfs diff=lfs merge=lfs -text
 GA_file8.mph filter=lfs diff=lfs merge=lfs -text
 GA_large6.mph filter=lfs diff=lfs merge=lfs -text
+GA_large5.mph filter=lfs diff=lfs merge=lfs -text
