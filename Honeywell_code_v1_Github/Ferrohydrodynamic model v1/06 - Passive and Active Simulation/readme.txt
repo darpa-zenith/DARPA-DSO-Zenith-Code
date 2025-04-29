@@ -1,0 +1,5 @@
+v1.0 2D Passive and Active correctors simulation
+
+The simulation procedure integrates both passive and active correctors through a coupled MATLAB and COMSOL approach. Initially, the geometry of the passive corrector, along with parameters such as the Halbach array dimensions, is defined in the MATLAB code. These parameters are then used to update the COMSOL model, which begins the simulation process.
+
+Upon completion of the simulation, COMSOL sends the resulting data back to MATLAB for further processing. In MATLAB, the overall potential is evaluated to generate the EQP interface. Additionally, a Fast Fourier Transform (FFT) analysis is performed on this data. This seamless interaction between MATLAB and COMSOL is facilitated by COMSOL Livelink, which streamlines the design procedure and enables automation.
