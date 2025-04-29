@@ -5,3 +5,13 @@ one_coil_quadrant_3D.mph filter=lfs diff=lfs merge=lfs -text
 HB_Environment.mph filter=lfs diff=lfs merge=lfs -text
 Halbach_WFE_200_um_improved.mph filter=lfs diff=lfs merge=lfs -text
 file.rst filter=lfs diff=lfs merge=lfs -text
+FINAL filter=lfs diff=lfs merge=lfs -text
+CONFIGURATION filter=lfs diff=lfs merge=lfs -text
+400V filter=lfs diff=lfs merge=lfs -text
+surf filter=lfs diff=lfs merge=lfs -text
+bottom filter=lfs diff=lfs merge=lfs -text
+Floor filter=lfs diff=lfs merge=lfs -text
+at filter=lfs diff=lfs merge=lfs -text
+charge filter=lfs diff=lfs merge=lfs -text
+on filter=lfs diff=lfs merge=lfs -text
+02_18_2024.mph filter=lfs diff=lfs merge=lfs -text
