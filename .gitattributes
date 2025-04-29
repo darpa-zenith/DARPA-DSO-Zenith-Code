@@ -24,3 +24,4 @@ Dish.wbpz filter=lfs diff=lfs merge=lfs -text
 GA_large1.wbpz filter=lfs diff=lfs merge=lfs -text
 GE_large1_2D.mph filter=lfs diff=lfs merge=lfs -text
 GE2Dsim.mph filter=lfs diff=lfs merge=lfs -text
+GAFull.wbpz filter=lfs diff=lfs merge=lfs -text
