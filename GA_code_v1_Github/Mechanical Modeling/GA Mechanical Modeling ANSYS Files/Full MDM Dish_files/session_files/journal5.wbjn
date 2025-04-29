@@ -1,0 +1,58 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+system1 = GetSystem(Name="SYS 1")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+system2 = GetSystem(Name="Geom")
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+Refresh()
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+system3 = GetSystem(Name="ENGD")
+engineeringData1 = system3.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Polyethylene",
+    Source="General_Materials.xml")
+matlProp1 = matl1.GetProperty(Name="Elasticity")
+matlProp1.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="MPa")
+matlProp1.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["1100 [MPa]"]])
+matlProp1.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["3500 [MPa]"]])
+matl1.DisplayName = "PA 12 40%"
+matlProp1.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["2500 [MPa]"]])
+matlProp2 = matl1.GetProperty(Name="Density")
+matlProp2.SetData(
+    Variables=["Density"],
+    Values=[["1 [kg m^-3]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Density",
+    Property="Unit",
+    Value="g cm^-3")
+matlProp2.SetData(
+    Variables=["Density"],
+    Values=[["0.001 [g cm^-3]"]])
+matlProp2.SetData(
+    Variables=["Density"],
+    Values=[["1.2 [g cm^-3]"]])
+matl1.DisplayName = "PA 12 30%"
+Save(Overwrite=True)
+Refresh()
+Save(Overwrite=True)
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+Refresh()
+Update()
+Save(Overwrite=True)

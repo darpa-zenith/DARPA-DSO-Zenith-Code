@@ -1,0 +1,35 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+system1 = GetSystem(Name="SYS")
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+Save(Overwrite=True)
+system1.Copy(KeepConnections=True)
+system1.DisplayText = "Oblique Astigmatism - Static Structural"
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+system1.DisplayText = "Astigmatism - Static Structural"
+Save(Overwrite=True)
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Exit()
+system2 = GetSystem(Name="SYS 1")
+model2 = system2.GetContainer(ComponentName="Model")
+model2.Edit()
+Save(Overwrite=True)
+system3 = GetSystem(Name="SYS 2")
+system3.DisplayText = "Influence Functions - Static Structural"
+Save(Overwrite=True)
+model2.Exit()
+results2 = system3.GetContainer(ComponentName="Results")
+results2.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model3 = system3.GetContainer(ComponentName="Model")
+model3.Exit()
+Save(Overwrite=True)
+Archive(
+    FilePath="C:/Users/10024674/OneDrive - General Atomics/2023 - DARPA Zenith/11-PDR Modeling and Engineering/ANSYS/Model Backup 022024.wbpz",
+    IncludeExternalImportedFiles=True)

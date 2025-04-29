@@ -1,0 +1,25 @@
+/COM,ANSYS RELEASE 2021 R2           BUILD 21.2      UP20210601       09:37:19
+
+ *** WARNING ***                         CP =       2.859   TIME= 09:37:21
+ Using 1 iteration per substep may result in unconverged solutions for   
+ nonlinear analysis and the program may not indicate divergence in this  
+ case.  Check your results.                                              
+
+ *** WARNING ***                         CP =       3.547   TIME= 09:37:21
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       4.234   TIME= 09:37:21
+ Material number 38 (used by element 140031) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      37.266   TIME= 09:37:33
+ Material number 38 (used by element 140031) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      54.594   TIME= 09:37:38
+ Material number 38 (used by element 140031) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                

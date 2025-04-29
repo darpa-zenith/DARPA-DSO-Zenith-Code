@@ -1,0 +1,69 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+system1 = GetSystem(Name="SYS 2")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+system2 = GetSystem(Name="ENGD")
+engineeringData1 = system2.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="FR-4")
+matlProp1 = material1.GetProperty(Name="Elasticity")
+matlProp1.SetData(
+    Variables=["Young's Modulus X direction"],
+    Values=[["18400000000 [Pa]"]])
+matlProp1.SetData(
+    Variables=["Young's Modulus Z direction"],
+    Values=[["18400000000 [Pa]"]])
+matlProp1.SetData(
+    Variables=["Poisson's Ratio YZ"],
+    Values=[["0.11"]])
+matlProp1.SetData(
+    Variables=["Poisson's Ratio XZ"],
+    Values=[["0.11"]])
+matlProp1.SetData(
+    Variables=["Shear Modulus XY"],
+    Values=[["8400000000 [Pa]"]])
+matlProp1.SetData(
+    Variables=["Shear Modulus XZ"],
+    Values=[["8400000000 [Pa]"]])
+matlProp2 = material1.GetProperty(Name="Thermal Conductivity")
+matlProp2.SetData(
+    Variables=["Thermal Conductivity Z direction"],
+    Values=[["0.28 [W m^-1 C^-1]"]])
+matlProp2.SetData(
+    Variables=["Thermal Conductivity Z direction"],
+    Values=[["0.38 [W m^-1 C^-1]"]])
+matlProp3 = material1.GetProperty(Name="Coefficient of Thermal Expansion")
+matlProp3.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Orthotropic"},
+    Variables=["Coefficient of Thermal Expansion X direction"],
+    Values=[["1.14E-05 [C^-1]"]])
+matlProp3.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Orthotropic"},
+    Variables=["Coefficient of Thermal Expansion Z direction"],
+    Values=[["1.14E-05 [C^-1]"]])
+Save(Overwrite=True)
+Refresh()
+system3 = GetSystem(Name="SYS 1")
+setup1 = system3.GetContainer(ComponentName="Setup")
+setup1.Edit()
+model2 = system3.GetContainer(ComponentName="Model")
+model2.Exit()
+model2.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+model2.Exit()
+model1.Exit()
+system4 = GetSystem(Name="Geom")
+geometry1 = system4.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+Refresh()
+Update()
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+model1.Exit()
+Save(Overwrite=True)

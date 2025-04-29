@@ -1,0 +1,12 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by Ansys Workbench.
+# Project name: Full Dish FEM
+# Creation date: 02/20/2024 08:25:02
+# 
+# 02/20/2024 08:25:02
+# The parameters defined in the project are:
+# ,P1 - Inner Mode Mat Thickness [mm]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1
+DP 0,9.5250000000000234

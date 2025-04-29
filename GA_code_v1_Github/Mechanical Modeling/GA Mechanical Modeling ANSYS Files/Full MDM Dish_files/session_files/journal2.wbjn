@@ -1,0 +1,94 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+system1 = GetSystem(Name="ENGD")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Stainless Steel",
+    Source="General_Materials.xml")
+matl2 = engineeringData1.ImportMaterial(
+    Name="Titanium Alloy",
+    Source="General_Materials.xml")
+matl3 = engineeringData1.ImportMaterial(
+    Name="Aluminum Alloy",
+    Source="General_Materials.xml")
+matl4 = engineeringData1.ImportMaterial(
+    Name="FR-4",
+    Source="General_Materials.xml")
+Save(Overwrite=True)
+Refresh()
+system2 = GetSystem(Name="SYS")
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+system3 = GetSystem(Name="Geom")
+geometry1 = system3.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+geometryComponent1.DeleteShare(System=system2)
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system3)
+Refresh()
+model1.Edit()
+Save(Overwrite=True)
+geometry1.Exit()
+Refresh()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometry1.Edit(IsSpaceClaimGeometry=True)
+Refresh()
+geometry1.Exit()
+Refresh()
+model1.Exit()
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+Save(Overwrite=True)
+Archive(
+    FilePath="C:/Users/10024674/OneDrive - General Atomics/2023 - DARPA Zenith/11-PDR Modeling and Engineering/ANSYS/Inital Model Backup.wbpz",
+    IncludeExternalImportedFiles=True)
+ClearMessages()
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+Refresh()
+system2.Copy(KeepConnections=True)
+system4 = GetSystem(Name="SYS 1")
+system4.DisplayText = "Inertial Noise - Static Structural"
+model2 = system4.GetContainer(ComponentName="Model")
+model2.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model2.Exit()
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+Save(Overwrite=True)
+system2.DisplayText = "Influence Functions - Static Structural"
+Refresh()
+Save(Overwrite=True)

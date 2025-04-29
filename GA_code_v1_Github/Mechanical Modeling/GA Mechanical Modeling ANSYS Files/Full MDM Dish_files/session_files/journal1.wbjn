@@ -1,0 +1,33 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+template1 = GetTemplate(TemplateName="EngData")
+system1 = template1.CreateSystem()
+template2 = GetTemplate(TemplateName="Geometry")
+system2 = template2.CreateSystem(
+    Position="Below",
+    RelativeTo=system1)
+template3 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system3 = template3.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+geometryComponent2 = system2.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system3,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system2)
+engineeringDataComponent1 = system3.GetComponent(Name="Engineering Data")
+engineeringDataComponent2 = system1.GetComponent(Name="Engineering Data")
+engineeringDataComponent1.ReplaceWithShare(
+    TargetSystem=system3,
+    ComponentToShare=engineeringDataComponent2,
+    SourceSystem=system1)
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+Refresh()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)

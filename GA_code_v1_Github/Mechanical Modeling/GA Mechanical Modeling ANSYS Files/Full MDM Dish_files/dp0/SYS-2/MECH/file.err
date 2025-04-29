@@ -1,0 +1,40 @@
+/COM,ANSYS RELEASE 2021 R2           BUILD 21.2      UP20210601       13:23:51
+
+ *** WARNING ***                         CP =       5.781   TIME= 13:23:54
+ Using 1 iteration per substep may result in unconverged solutions for   
+ nonlinear analysis and the program may not indicate divergence in this  
+ case.  Check your results.                                              
+
+ *** WARNING ***                         CP =       6.797   TIME= 13:23:55
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       8.156   TIME= 13:23:55
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      76.016   TIME= 13:24:18
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     102.344   TIME= 13:24:26
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     126.766   TIME= 13:24:33
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     183.703   TIME= 13:24:50
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     213.469   TIME= 13:24:58
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                

@@ -1,0 +1,102 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+Save(Overwrite=True)
+fileReference1 = GetFileReference(Name="F9")
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+SetFileDeletable(
+    File=fileReference1,
+    IsDeletable=True)
+fileReference1.Unregister(
+    DeleteFileIfNonShared="False",
+    BackUp=False)
+Save(Overwrite=True)

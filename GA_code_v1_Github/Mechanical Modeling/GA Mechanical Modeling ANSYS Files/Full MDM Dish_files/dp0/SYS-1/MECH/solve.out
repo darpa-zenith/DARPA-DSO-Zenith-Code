@@ -1,0 +1,1493 @@
+
+ Ansys Mechanical Enterprise                       
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2021 R2          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2021 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2021 R2 
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products 2021 R2
+ SpaceClaim 2021 R2  
+ ANSYS Sherlock 2021 R2  
+ Autodyn 2021 R2 
+ LS-DYNA 2021 R2 
+ Aqwa 2021 R2
+ Additive 2021 R2
+ Customization Files for User Programmable Features 2021 R2  
+ Mechanical Products 2021 R2 
+ Remote Solve Manager Standalone Services 2021 R2
+ Viewer 2021 R2  
+ VRX Sound - SAS 2021 R2 
+ ACIS Geometry Interface 2021 R2 
+ AutoCAD Geometry Interface 2021 R2  
+ Catia, Version 4 Geometry Interface 2021 R2 
+ Catia, Version 5 Geometry Interface 2021 R2 
+ Catia, Version 6 Geometry Interface 2021 R2 
+ Creo Elements/Direct Modeling Geometry Interface 2021 R2
+ Creo Parametric Geometry Interface 2021 R2  
+ Inventor Geometry Interface 2021 R2 
+ JTOpen Geometry Interface 2021 R2   
+ NX Geometry Interface 2021 R2   
+ Parasolid Geometry Interface  2021 R2   
+ Solid Edge Geometry Interface 2021 R2   
+ SOLIDWORKS Geometry Interface 2021 R2   
+ ANSYS, Inc. License Manager 2021 R2 
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  SHARED MEMORY PARALLEL REQUESTED
+    SINGLE PROCESS WITH   4 THREADS REQUESTED
+    TOTAL OF     4 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\10024674\OneDrive - General Atomics\Documents\ScrFD51\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\10024674\OneDrive - General Atomics\Documents\ScrFD51\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2021 R2              BUILD= 21.2      UP20210601   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file  09:37:20  MAR 20, 2024 CP=      0.531
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ DO NOT WRITE ELEMENT RESULTS INTO DATABASE
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  9.62222222    
+
+ TITLE= 
+ Full Dish FEM--Static Structural (B5)                                         
+
+  ACT Extensions:
+      LSDYNA, 2021.1
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+  
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\10024674\OneDrive - General Atomics\Documents\ScrFD51\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\10024674\OneDrive - General Atomics\2023 - DARPA Zenith\11-PDR Modeling and Engineering\ANSYS\Full Dish FEM_files\dp0\SYS-1\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\10024674\OneDrive - General Atomics\2023 - DARPA Zenith\11-PDR Modeling and Engineering\ANSYS\Full Dish FEM_files\user_files\
+ --- Data in consistent NMM units. See Solving Units in the help system for more
+
+ MPA UNITS SPECIFIED FOR INTERNAL    
+  LENGTH      = MILLIMETERS (mm)
+  MASS        = TONNE (Mg)
+  TIME        = SECONDS (sec)
+  TEMPERATURE = CELSIUS (C)
+  TOFFSET     = 273.0
+  FORCE       = NEWTON (N)
+  HEAT        = MILLIJOULES (mJ)
+
+ INPUT  UNITS ARE ALSO SET TO MPA 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2     ***
+ Ansys Mechanical Enterprise                       
+ 00000000  VERSION=WINDOWS x64   09:37:20  MAR 20, 2024 CP=      0.594
+
+ Full Dish FEM--Static Structural (B5)                                         
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "DEFORMABLE MIRROR BASE\Solid1" ***********
+ *********** Elements for Body 3 "MDM TYPE ARMATURE\Solid1" ***********
+ *********** Elements for Body 4 "CENTER CLAMP SERVICE\Solid1" ***********
+ *********** Elements for Body 5 "Seed Line Elements - Global AO\Beam (Circle)" 
+ *********** Elements for Body 6 "Seed Line Elements - Global AO\Beam (Circle)" 
+ *********** Elements for Body 7 "Seed Line Elements - Global AO\Beam (Circle)" 
+ *********** Elements for Body 8 "Seed Line Elements - Global AO\Beam (Circle)" 
+ *********** Elements for Body 9 "Seed Line Elements - Global AO\Beam (Circle)" 
+ *********** Elements for Body 10 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 11 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 12 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 13 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 14 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 15 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 16 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 17 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 18 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 19 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 20 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 21 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 22 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 23 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 24 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 25 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 26 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 27 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Elements for Body 28 "Seed Line Elements - Global AO\Beam (Circle)"
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Send Beam Properties ***********
+ *********** Create Contact "Bonded - MDM To Deform Plate" ***********
+             Real Constant Set For Above Contact Is 30 & 29
+ *********** Create Contact "Bonded - Center Clamp To Deform Plate" ***********
+             Real Constant Set For Above Contact Is 32 & 31
+ *********** Create Contact "Contact Region" ***********
+             Real Constant Set For Above Contact Is 34 & 33
+ *********** Create Contact "Contact Region 2" ***********
+             Real Constant Set For Above Contact Is 36 & 35
+ *********** Create Contact "Bonded - Beam End Contacts To MDM Beam Contacts" **
+ *********** Send Named Selection as Element Component ***********
+ *********** Send Named Selection as Element Component ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Send Named Selection as Element Component ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Send Named Selection as Node Component ***********
+ ******* Constant Zero Displacement X *******
+ ******* Constant Zero Displacement Y *******
+ ******* Constant Zero Displacement Z *******
+ *********** Send Distributed Mass Using Surface Effect **********
+
+
+ ***** ROUTINE COMPLETED *****  CP =         2.797
+
+
+ --- Number of total nodes = 88274
+ --- Number of contact elements = 62194
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 38949
+ --- Number of condensed parts = 0
+ --- Number of total elements = 101215
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  9.62250000    
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ PERFORM A STATIC ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ USE A MAXIMUM OF     1 EQUILIBRIUM ITERATIONS EACH SUBSTEP
+
+ *** WARNING ***                         CP =       2.859   TIME= 09:37:21
+ Using 1 iteration per substep may result in unconverged solutions for   
+ nonlinear analysis and the program may not indicate divergence in this  
+ case.  Check your results.                                              
+
+ DO NOT USE PREDICTOR METHOD FOR  ALL DEGREES OF FREEDOM
+
+ PARAMETER _THICKRATIO =    0.7410000000E-01
+
+ USE SPARSE MATRIX DIRECT SOLVER
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ DO NOT SAVE ANY RESTART FILES AT ALL
+ ****************************************************
+ ******************* SOLVE FOR LS 1 OF 3 ****************
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE      1 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  1.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ PRINTOUT RESUMED BY /GOP
+
+ WRITE MISC ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR THE ENTITIES DEFINED BY COMPONENT _ELMISC 
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_                         ( =   0.00000     )  NE  
+      0                                 ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       3.547   TIME= 09:37:21
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       3.797   TIME= 09:37:21
+ The model data was checked and warning messages were found.             
+  Please review output or errors file ( C:\Users\10024674\OneDrive -     
+ General Atomics\Documents\ScrFD51\file.err ) for these warning          
+ messages.                                                               
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE         2 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         3 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE         4 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE         5 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         5 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         6 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         6 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         7 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         7 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         8 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         8 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         9 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         9 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        10 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        10 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        11 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        11 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        12 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        12 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        13 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        13 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        14 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        14 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        15 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        15 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        16 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        16 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        17 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        17 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        18 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        18 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        19 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        19 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        20 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        20 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        21 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        21 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        22 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        22 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        23 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        23 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        24 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        24 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        25 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        25 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        26 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        26 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        27 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        27 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        28 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        28 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        37 IS BEAM188 . KEYOPT(3)=2 IS ALWAYS SUGGESTED.  KEYOPT(3) HAS BEEN RESET
+  KEYOPT(1-12)=    0    0    2    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE        37 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2     ***
+ Ansys Mechanical Enterprise                       
+ 00000000  VERSION=WINDOWS x64   09:37:21  MAR 20, 2024 CP=      3.859
+
+ Full Dish FEM--Static Structural (B5)                                         
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   EQUATION SOLVER OPTION. . . . . . . . . . . . .SPARSE             
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** WARNING ***                         CP =       4.234   TIME= 09:37:21
+ Material number 38 (used by element 140031) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** NOTE ***                            CP =       4.281   TIME= 09:37:21
+ The step data was checked and warning messages were found.              
+  Please review output or errors file ( C:\Users\10024674\OneDrive -     
+ General Atomics\Documents\ScrFD51\file.err ) for these warning          
+ messages.                                                               
+
+ *** NOTE ***                            CP =       4.281   TIME= 09:37:21
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+ *** NOTE ***                            CP =       4.594   TIME= 09:37:21
+ Internal nodes from 130239 to 130358 are created.                       
+ 120 internal nodes are used for quadratic and/or cubic options of       
+ BEAM188, PIPE288, and/or SHELL208.                                      
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+      MISC        ALL       _ELMISC 
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 29 and contact element type 29 has been set up.  The       
+ companion pair has real constant set ID 30.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.23887E+07
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.57772    
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length                8.5334    
+ Average contact pair depth                    5.7772    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.4443    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Max.  Initial penetration 7.105427358E-15 was detected between contact  
+ element 94131 and target element 113689.                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 30 and contact element type 29 has been set up.  The       
+ companion pair has real constant set ID 29.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.23887E+07
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.23495    
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length                7.1645    
+ Average contact pair depth                    2.3495    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.58736    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Max.  Initial penetration 5.329070518E-15 was detected between contact  
+ element 104254 and target element 85469.                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 31 and contact element type 31 has been set up.  The       
+ companion pair has real constant set ID 32.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.21910E+07
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.64811    
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length                7.6975    
+ Average contact pair depth                    6.4811    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.6203    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Max.  Initial penetration 2.496598874E-04 was detected between contact  
+ element 117825 and target element 135524.                               
+ You may move entire target surface by : x= 8.178008641E-07, y=          
+ 2.496546651E-04, z= -1.392388253E-06,to reduce initial penetration.     
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 32 and contact element type 31 has been set up.  The       
+ companion pair has real constant set ID 31.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.21910E+07
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.23495    
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length                7.1645    
+ Average contact pair depth                    2.3495    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.58736    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Max.  Initial penetration 3.775541214E-04 was detected between contact  
+ element 123513 and target element 117711.                               
+ You may move entire target surface by : x= 2.016852355E-06, y=          
+ -3.775484481E-04, z= 4.650211995E-07,to reduce initial penetration.     
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 33 and contact element type 33 has been set up.  The       
+ companion pair has real constant set ID 34.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.24406E+07
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.22493    
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length                7.4922    
+ Average contact pair depth                    2.2493    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.56233    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Max.  Initial penetration 5.329070518E-15 was detected between contact  
+ element 137151 and target element 139163.                               
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       8.266   TIME= 09:37:23
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 34 and contact element type 33 has been set up.  The       
+ companion pair has real constant set ID 33.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.24406E+07
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.56543    
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length                8.8762    
+ Average contact pair depth                    5.6543    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.4136    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       8.281   TIME= 09:37:23
+ Max.  Initial penetration 7.105427358E-15 was detected between contact  
+ element 137958 and target element 136585.                               
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       8.281   TIME= 09:37:23
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 35 and contact element type 35 has been set up.  The       
+ companion pair has real constant set ID 36.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.24942E+07
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.25432    
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length                8.4774    
+ Average contact pair depth                    2.5432    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.63580    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       8.281   TIME= 09:37:23
+ Max.  Initial penetration 3.775541214E-04 was detected between contact  
+ element 139907 and target element 139939.                               
+ You may move entire target surface by : x= 2.016852355E-06, y=          
+ -3.775484481E-04, z= 4.650211995E-07,to reduce initial penetration.     
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       8.281   TIME= 09:37:23
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 36 and contact element type 35 has been set up.  The       
+ companion pair has real constant set ID 35.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.24942E+07
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.56932    
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length                7.5075    
+ Average contact pair depth                    5.6932    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.4233    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       8.281   TIME= 09:37:23
+ Max.  Initial penetration 2.496598874E-04 was detected between contact  
+ element 139935 and target element 139896.                               
+ You may move entire target surface by : x= 8.178008641E-07, y=          
+ 2.496546651E-04, z= -1.392388253E-06,to reduce initial penetration.     
+ ****************************************
+  
+  
+  
+
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          29
+ Max.  Penetration of -1.776356839E-15 has been detected between contact 
+ element 94932 and target element 113368.                                
+  
+ Max.  Geometrical gap of 5.329070518E-15 has been detected between      
+ contact element 95245 and target element 113617.                        
+  
+ Max.  Geometrical penetration of -7.105427358E-15 has been detected     
+ between contact element 95245 and target element 113617.                
+ For total 8906 contact elements, there are 932 elements are in contact. 
+ There are 932 elements are in sticking.                                 
+ Contacting area 30308.0769.                                             
+ Max.  Pinball distance 1.44429946.                                      
+ One of the contact searching regions contains at least 21 target        
+ elements.                                                               
+ Max.  Pressure/force 1.810444404E-08.                                   
+ Max.  Normal stiffness 2388701.32.                                      
+ Min.  Normal stiffness 2388701.32.                                      
+ Max.  Tangential stiffness 1212878.3.                                   
+ Min.  Tangential stiffness 1212878.3.                                   
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          30
+
+ *** NOTE ***                            CP =      15.766   TIME= 09:37:26
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          31
+ Max.  Penetration of -3.324751143E-17 has been detected between contact 
+ element 117818 and target element 135524.                               
+  
+ Max.  Geometrical gap of 3.190714918E-05 has been detected between      
+ contact element 117825 and target element 135524.                       
+  
+ Max.  Geometrical penetration of -2.496598874E-04 has been detected     
+ between contact element 117825 and target element 135524.               
+ For total 98 contact elements, there are 20 elements are in contact.    
+ There are 20 elements are in sticking.                                  
+ Contacting area 506.547723.                                             
+ Max.  Pinball distance 1.62026851.                                      
+ One of the contact searching regions contains at least 14 target        
+ elements.                                                               
+ Max.  Pressure/force 1.497927475E-08.                                   
+ Max.  Normal stiffness 2190994.88.                                      
+ Min.  Normal stiffness 2190994.88.                                      
+ Max.  Tangential stiffness 1383567.65.                                  
+ Min.  Tangential stiffness 1383567.65.                                  
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          32
+
+ *** NOTE ***                            CP =      15.766   TIME= 09:37:26
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          33
+
+ *** NOTE ***                            CP =      15.766   TIME= 09:37:26
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          34
+ Max.  Penetration of -1.776356839E-15 has been detected between contact 
+ element 138664 and target element 136264.                               
+  
+ Max.  Geometrical gap of 5.329070518E-15 has been detected between      
+ contact element 138822 and target element 136513.                       
+  
+ Max.  Geometrical penetration of -7.105427358E-15 has been detected     
+ between contact element 138822 and target element 136513.               
+ For total 988 contact elements, there are 932 elements are in contact.  
+ There are 932 elements are in sticking.                                 
+ Contacting area 30308.0769.                                             
+ Max.  Pinball distance 1.41357036.                                      
+ One of the contact searching regions contains at least 20 target        
+ elements.                                                               
+ Max.  Pressure/force 1.924101716E-08.                                   
+ Max.  Normal stiffness 2440628.44.                                      
+ Min.  Normal stiffness 2440628.44.                                      
+ Max.  Tangential stiffness 1166042.05.                                  
+ Min.  Tangential stiffness 1166042.05.                                  
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          35
+
+ *** NOTE ***                            CP =      15.766   TIME= 09:37:26
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          36
+ Max.  Penetration of -3.324751143E-17 has been detected between contact 
+ element 139928 and target element 139896.                               
+  
+ Max.  Geometrical gap of 3.190714918E-05 has been detected between      
+ contact element 139935 and target element 139896.                       
+  
+ Max.  Geometrical penetration of -2.496598874E-04 has been detected     
+ between contact element 139935 and target element 139896.               
+ For total 20 contact elements, there are 20 elements are in contact.    
+ There are 20 elements are in sticking.                                  
+ Contacting area 506.547723.                                             
+ Max.  Pinball distance 1.42330327.                                      
+ One of the contact searching regions contains at least 10 target        
+ elements.                                                               
+ Max.  Pressure/force 1.663120727E-08.                                   
+ Max.  Normal stiffness 2494197.89.                                      
+ Min.  Normal stiffness 2494197.89.                                      
+ Max.  Tangential stiffness 1418590.2.                                   
+ Min.  Tangential stiffness 1418590.2.                                   
+ *************************************************
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+        0.16249E-01    0.0000        0.0000     |     0.0000      -0.42569E-06   0.32196    
+         0.0000       0.16249E-01    0.0000     |    0.42569E-06    0.0000       0.48634E-06
+         0.0000        0.0000       0.16249E-01 |   -0.32196      -0.48634E-06    0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |     482.38      -0.31541E-05   0.81843E-04
+                                                |   -0.31541E-05    907.44       0.65216E-05
+                                                |    0.81843E-04   0.65216E-05    482.39    
+
+   TOTAL MASS = 0.16249E-01
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=   0.29930E-04   -19.814      -0.26198E-04
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+         476.01      -0.12790E-04   0.81843E-04
+       -0.12790E-04    907.44       0.14956E-04
+        0.81843E-04   0.14956E-04    476.01    
+     The inertia principal axes coincide with the global Cartesian axes
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.144891E-03
+     2  0.262025E-02
+     3  0.434966E-02
+     4  0.267662E-04
+     5  0.255150E-03
+     6  0.255150E-03
+     7  0.255150E-03
+     8  0.255150E-03
+     9  0.255150E-03
+    10  0.255150E-03
+    11  0.255150E-03
+    12  0.255150E-03
+    13  0.255150E-03
+    14  0.255150E-03
+    15  0.255150E-03
+    16  0.255150E-03
+    17  0.255150E-03
+    18  0.255150E-03
+    19  0.255150E-03
+    20  0.255150E-03
+    21  0.255150E-03
+    22  0.255150E-03
+    23  0.255150E-03
+    24  0.255150E-03
+    25  0.255150E-03
+    26  0.255150E-03
+    27  0.255150E-03
+    28  0.255150E-03
+    38  0.298350E-02
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 609619616 at element 53029.                                   
+ Minimum = 171880.521 at element 58501.                                  
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      2087  SOLID187      0.922   0.000442
+        2      8154  SOLID186      4.234   0.000519
+        3     28487  SOLID187      6.891   0.000242
+        4       173  SOLID187      0.000   0.000000
+        5         2  BEAM188       0.000   0.000000
+        6         2  BEAM188       0.000   0.000000
+        7         2  BEAM188       0.000   0.000000
+        8         2  BEAM188       0.000   0.000000
+        9         2  BEAM188       0.000   0.000000
+       10         2  BEAM188       0.000   0.000000
+       11         2  BEAM188       0.000   0.000000
+       12         2  BEAM188       0.000   0.000000
+       13         2  BEAM188       0.000   0.000000
+       14         2  BEAM188       0.000   0.000000
+       15         2  BEAM188       0.000   0.000000
+       16         2  BEAM188       0.000   0.000000
+       17         2  BEAM188       0.062   0.031250
+       18         2  BEAM188       0.125   0.062500
+       19         2  BEAM188       0.000   0.000000
+       20         2  BEAM188       0.000   0.000000
+       21         2  BEAM188       0.000   0.000000
+       22         2  BEAM188       0.000   0.000000
+       23         2  BEAM188       0.000   0.000000
+       24         2  BEAM188       0.000   0.000000
+       25         2  BEAM188       0.000   0.000000
+       26         2  BEAM188       0.000   0.000000
+       27         2  BEAM188       0.000   0.000000
+       28         2  BEAM188       0.000   0.000000
+       29     18081  CONTA174      6.141   0.000340
+       30     18081  TARGE170      1.891   0.000105
+       31      9273  CONTA174      3.141   0.000339
+       32      9273  TARGE170      0.922   0.000099
+       33      1814  CONTA174      1.188   0.000655
+       34      1814  TARGE170      0.188   0.000103
+       35        37  CONTA174      0.000   0.000000
+       36        37  TARGE170      0.000   0.000000
+       37        72  BEAM188       0.062   0.000868
+       38      3784  SURF154       1.125   0.000297
+ Time at end of element matrix formulation CP = 15.765625.               
+
+ *** NOTE ***                            CP =      17.188   TIME= 09:37:26
+ The initial memory allocation (-m) has been exceeded.                   
+  Supplemental memory allocations are being used.                        
+
+ SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =      265629,    Maximum wavefront =   1116
+  Memory allocated for solver              =  1501.610 MB
+  Memory required for in-core solution     =  1440.448 MB
+  Memory required for out-of-core solution =   488.611 MB
+
+ *** NOTE ***                            CP =      19.078   TIME= 09:37:28
+ The Sparse Matrix Solver is currently running in the in-core memory     
+ mode.  This memory mode uses the most amount of memory in order to      
+ avoid using the hard drive as much as possible, which most often        
+ results in the fastest solution time.  This mode is recommended if      
+ enough physical memory is present to accommodate all of the solver      
+ data.                                                                   
+ curEqn= 203162  totEqn= 265629 Job CP sec=     25.469
+      Factor Done=  73% Factor Wall sec=      0.351 rate=  259885.8 Mflops
+ curEqn= 265629  totEqn= 265629 Job CP sec=     27.094
+      Factor Done= 100% Factor Wall sec=      0.763 rate=  162632.1 Mflops
+ Sparse solver maximum pivot= 182437329 at node 17119 UY.                
+ Sparse solver minimum pivot= 634.600839 at node 19126 UY.               
+ Sparse solver minimum pivot in absolute value= 634.600839 at node 19126 
+ UY.                                                                     
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      2087  SOLID187      0.484   0.000232
+        2      8154  SOLID186      4.062   0.000498
+        3     28487  SOLID187      6.844   0.000240
+        4       173  SOLID187      0.062   0.000361
+        5         2  BEAM188       0.000   0.000000
+        6         2  BEAM188       0.000   0.000000
+        7         2  BEAM188       0.000   0.000000
+        8         2  BEAM188       0.000   0.000000
+        9         2  BEAM188       0.000   0.000000
+       10         2  BEAM188       0.000   0.000000
+       11         2  BEAM188       0.000   0.000000
+       12         2  BEAM188       0.000   0.000000
+       13         2  BEAM188       0.000   0.000000
+       14         2  BEAM188       0.000   0.000000
+       15         2  BEAM188       0.000   0.000000
+       16         2  BEAM188       0.000   0.000000
+       17         2  BEAM188       0.000   0.000000
+       18         2  BEAM188       0.000   0.000000
+       19         2  BEAM188       0.000   0.000000
+       20         2  BEAM188       0.000   0.000000
+       21         2  BEAM188       0.000   0.000000
+       22         2  BEAM188       0.000   0.000000
+       23         2  BEAM188       0.000   0.000000
+       24         2  BEAM188       0.000   0.000000
+       25         2  BEAM188       0.000   0.000000
+       26         2  BEAM188       0.000   0.000000
+       27         2  BEAM188       0.000   0.000000
+       28         2  BEAM188       0.000   0.000000
+       29     15141  CONTA174      4.031   0.000266
+       31      9257  CONTA174      2.656   0.000287
+       33      1814  CONTA174      0.750   0.000413
+       35        37  CONTA174      0.031   0.000845
+       37        72  BEAM188       0.000   0.000000
+       38      3784  SURF154       0.953   0.000252
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      2087  SOLID187      0.062   0.000030
+        2      8154  SOLID186      0.000   0.000000
+        3     28487  SOLID187      0.953   0.000033
+        4       173  SOLID187      0.000   0.000000
+        5         2  BEAM188       0.000   0.000000
+        6         2  BEAM188       0.000   0.000000
+        7         2  BEAM188       0.000   0.000000
+        8         2  BEAM188       0.000   0.000000
+        9         2  BEAM188       0.000   0.000000
+       10         2  BEAM188       0.000   0.000000
+       11         2  BEAM188       0.000   0.000000
+       12         2  BEAM188       0.000   0.000000
+       13         2  BEAM188       0.000   0.000000
+       14         2  BEAM188       0.000   0.000000
+       15         2  BEAM188       0.000   0.000000
+       16         2  BEAM188       0.000   0.000000
+       17         2  BEAM188       0.000   0.000000
+       18         2  BEAM188       0.000   0.000000
+       19         2  BEAM188       0.000   0.000000
+       20         2  BEAM188       0.000   0.000000
+       21         2  BEAM188       0.000   0.000000
+       22         2  BEAM188       0.000   0.000000
+       23         2  BEAM188       0.000   0.000000
+       24         2  BEAM188       0.000   0.000000
+       25         2  BEAM188       0.000   0.000000
+       26         2  BEAM188       0.000   0.000000
+       27         2  BEAM188       0.000   0.000000
+       28         2  BEAM188       0.000   0.000000
+       29     15141  CONTA174      0.484   0.000032
+       31      9257  CONTA174      0.125   0.000014
+       33      1814  CONTA174      0.000   0.000000
+       35        37  CONTA174      0.000   0.000000
+       37        72  BEAM188       0.000   0.000000
+       38      3784  SURF154       0.062   0.000017
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
+ *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+      240.875 MB WRITTEN ON ELEMENT SAVED DATA FILE: file.esav
+      160.312 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
+       29.938 MB WRITTEN ON RESULTS FILE: file.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 1 *************
+ ****************************************************
+ ******************* SOLVE FOR LS 2 OF 3 ****************
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE      1 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  2.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE MISC ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR THE ENTITIES DEFINED BY COMPONENT _ELMISC 
+
+ ACEL=    0.0000      9810.0      0.0000    
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      37.266   TIME= 09:37:33
+ Material number 38 (used by element 140031) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** NOTE ***                            CP =      37.328   TIME= 09:37:33
+ The step data was checked and warning messages were found.              
+  Please review output or errors file ( C:\Users\10024674\OneDrive -     
+ General Atomics\Documents\ScrFD51\file.err ) for these warning          
+ messages.                                                               
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2     ***
+ Ansys Mechanical Enterprise                       
+ 00000000  VERSION=WINDOWS x64   09:37:33  MAR 20, 2024 CP=     37.516
+
+ Full Dish FEM--Static Structural (B5)                                         
+
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     2
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  2.0000    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   INERTIA LOADS                        X           Y           Z 
+      ACEL . . . . . . . . . . . .  0.0000      9810.0      0.0000    
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+      MISC        ALL       _ELMISC 
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ *** LOAD STEP     2   SUBSTEP     1  COMPLETED.    CUM ITER =      2
+ *** TIME =   2.00000         TIME INC =   1.00000      OLD TRIANG MATRIX
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 2 *************
+ ****************************************************
+ ******************* SOLVE FOR LS 3 OF 3 ****************
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE      1 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  3.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE MISC ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR THE ENTITIES DEFINED BY COMPONENT _ELMISC 
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      54.594   TIME= 09:37:38
+ Material number 38 (used by element 140031) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** NOTE ***                            CP =      54.594   TIME= 09:37:39
+ The step data was checked and warning messages were found.              
+  Please review output or errors file ( C:\Users\10024674\OneDrive -     
+ General Atomics\Documents\ScrFD51\file.err ) for these warning          
+ messages.                                                               
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2     ***
+ Ansys Mechanical Enterprise                       
+ 00000000  VERSION=WINDOWS x64   09:37:39  MAR 20, 2024 CP=     54.781
+
+ Full Dish FEM--Static Structural (B5)                                         
+
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     3
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  3.0000    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   INERTIA LOADS                        X           Y           Z 
+      ACEL . . . . . . . . . . . .  0.0000      9810.0      0.0000    
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+      MISC        ALL       _ELMISC 
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ *** LOAD STEP     3   SUBSTEP     1  COMPLETED.    CUM ITER =      3
+ *** TIME =   3.00000         TIME INC =   1.00000      OLD TRIANG MATRIX
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 3 *************
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  9.62861111    
+
+ PRINTOUT RESUMED BY /GOP
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =        70.578
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2     ***
+ Ansys Mechanical Enterprise                       
+ 00000000  VERSION=WINDOWS x64   09:37:43  MAR 20, 2024 CP=     70.594
+
+ Full Dish FEM--Static Structural (B5)                                         
+
+
+
+          ***** ANSYS RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =      70.594   TIME= 09:37:43
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE ANSYS POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =        70.609
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  9.62861111    
+
+ PARAMETER _PREPTIME =     1.000000000    
+
+ PARAMETER _SOLVTIME =     22.00000000    
+
+ PARAMETER _POSTTIME =     0.000000000    
+
+ PARAMETER _TOTALTIM =     23.00000000    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  0.00000000    
+
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE=  0.00000000    
+
+ *GET  _SSMODE   FROM  ACTI  ITEM=SOLU SSMM  VALUE=  2.00000000    
+
+ *GET  _NDOFS    FROM  ACTI  ITEM=SOLU NDOF  VALUE=  265629.000    
+ --- Total number of nodes = 88274
+ --- Total number of elements = 101215
+ --- Element load balance ratio = 0
+ --- Time to combine distributed files = 0
+ --- Sparse memory mode = 2
+ --- Number of DOF = 265629
+
+ EXIT ANSYS WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          5
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------------------- A N S Y S   S T A T I S T I C S ------------------------+
+
+Release: 2021 R2            Build: 21.2       Update: UP20210601   Platform: WINDOWS x64 
+Date Run: 03/20/2024   Time: 09:37     Process ID: 3832
+Operating System: Windows 10  (Build: 19044)
+
+Processor Model: Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz
+
+Compiler: Intel(R) FORTRAN Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) C/C++ Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191125
+          BLAS Library supplied by Intel(R) MKL
+
+Number of machines requested            :    1
+Total number of cores available         :   12
+Number of physical cores available      :    6
+Number of processes requested           :    1
+Number of threads per process requested :    4
+Total number of cores requested         :    4 (Shared Memory Parallel)                    
+
+GPU Acceleration: Not Requested
+
+Job Name: file
+Input File: dummy.dat
+Working Directory: C:\Users\10024674\OneDrive - General Atomics\Documents\ScrFD51
+
+Total CPU time for main thread                    :       23.9 seconds
+Total CPU time summed for all threads             :       71.1 seconds
+
+Elapsed time spent obtaining a license            :        0.6 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.7 seconds
+Elapsed time spent solution - preprocessing       :        1.9 seconds
+Elapsed time spent computing solution             :       20.0 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Equation solver used                              :            Sparse (symmetric)
+Equation solver effective I/O rate                :       25.1 GB/sec
+
+Maximum total memory used                         :     2008.0 MB
+Maximum total memory allocated                    :     3908.0 MB
+Total physical memory available                   :         64 GB
+
+Total amount of I/O written to disk               :        1.4 GB
+Total amount of I/O read from disk                :        2.3 GB
+
++------------------ E N D   A N S Y S   S T A T I S T I C S -------------------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                            ANSYS RUN COMPLETED                            |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys 2021 R2               Build 21.2         UP20210601     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used     135 MB    Maximum Scratch Memory Used   1873 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =         71.062       Time  =  09:37:44        |
+ |        Elapsed Time (sec) =         26.000       Date  =  03/20/2024      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*

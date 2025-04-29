@@ -1,0 +1,205 @@
+/COM,ANSYS RELEASE 2021 R2           BUILD 21.2      UP20210601       09:51:01
+
+ *** WARNING ***                         CP =       3.266   TIME= 09:51:03
+ Using 1 iteration per substep may result in unconverged solutions for   
+ nonlinear analysis and the program may not indicate divergence in this  
+ case.  Check your results.                                              
+
+ *** WARNING ***                         CP =       3.891   TIME= 09:51:03
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       4.641   TIME= 09:51:03
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      37.938   TIME= 09:51:15
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      54.797   TIME= 09:51:20
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      70.266   TIME= 09:51:24
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      85.766   TIME= 09:51:29
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     101.094   TIME= 09:51:33
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     116.203   TIME= 09:51:38
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     131.484   TIME= 09:51:42
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     146.797   TIME= 09:51:47
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     161.922   TIME= 09:51:51
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     177.297   TIME= 09:51:56
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     192.312   TIME= 09:52:00
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     207.328   TIME= 09:52:05
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     222.578   TIME= 09:52:09
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     237.406   TIME= 09:52:13
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     252.516   TIME= 09:52:18
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     267.453   TIME= 09:52:22
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     282.344   TIME= 09:52:27
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     297.516   TIME= 09:52:31
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     312.391   TIME= 09:52:36
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     327.547   TIME= 09:52:40
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     342.375   TIME= 09:52:44
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     357.719   TIME= 09:52:49
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     372.750   TIME= 09:52:53
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     387.969   TIME= 09:52:58
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     402.844   TIME= 09:53:02
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     418.078   TIME= 09:53:07
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     433.438   TIME= 09:53:11
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     448.453   TIME= 09:53:16
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     463.422   TIME= 09:53:20
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     478.578   TIME= 09:53:24
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     493.688   TIME= 09:53:29
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     508.422   TIME= 09:53:33
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     523.531   TIME= 09:53:38
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     538.781   TIME= 09:53:42
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     554.109   TIME= 09:53:47
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     569.312   TIME= 09:53:51
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     584.047   TIME= 09:53:55
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =     599.047   TIME= 09:54:00
+ Material number 38 (used by element 139942) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
