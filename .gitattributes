@@ -1,2 +1,0 @@
-2D filter=lfs diff=lfs merge=lfs -text
-simulation.mph filter=lfs diff=lfs merge=lfs -text
