@@ -2,3 +2,4 @@ multi_coil_quad_75_coil_3D.mph filter=lfs diff=lfs merge=lfs -text
 2D filter=lfs diff=lfs merge=lfs -text
 simulation.mph filter=lfs diff=lfs merge=lfs -text
 one_coil_quadrant_3D.mph filter=lfs diff=lfs merge=lfs -text
+HB_Environment.mph filter=lfs diff=lfs merge=lfs -text
